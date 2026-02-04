@@ -6,7 +6,7 @@ const App = () => {
   const [arr,setarr]=useState([]);
   function fetchData()
   {
-      axios.get("http://localhost:3000/api/notes/")
+      axios.get("https://cohart2backend-1.onrender.com/api/notes/")
       .then((res)=>
       {
           console.log(res.data);
@@ -22,7 +22,7 @@ const App = () => {
     e.preventDefault();
     let {title,description}=e.target.elements;
     console.log(title.value,description.value);
-    axios.post("http://localhost:3000/api/notes/",{
+    axios.post("https://cohart2backend-1.onrender.com/api/notes/",{
       title:title.value,
       description:description.value,
     })
@@ -36,7 +36,7 @@ const App = () => {
   }
   function handleDelete(id)
   {
-      axios.delete("http://localhost:3000/api/notes/"+id)
+      axios.delete("https://cohart2backend-1.onrender.com/api/notes/"+id)
       .then((res)=>
       {
         console.log(res.data);
