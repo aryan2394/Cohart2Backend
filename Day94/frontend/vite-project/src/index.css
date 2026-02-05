@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body,#root{
+  height: 100%;
+  width: 100%;
+}
+.parent{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+.child{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-width: 200px;
+  border: 1px solid black;
+  border-radius: 0.7rem;
+  padding: 0.7rem;
+}
+form{
+  display: flex;
+  gap: 1rem;
+  padding: 0.7rem;
+}
+input,button{
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  background-color: rgba(128, 128, 128, 0.34);
+  color: black;
+}
+button{
+  width: fit-content;
+}
+
