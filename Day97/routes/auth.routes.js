@@ -24,7 +24,7 @@ authRouter.post("/register",async (req,res)=>
         })
     }
     let user=await userModel.create({
-        name,email,password 
+        name,email,password
     })
     let token=jwt.sign(
         {
