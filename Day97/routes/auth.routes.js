@@ -22,6 +22,11 @@ authRouter.post("/register",async (req,res)=>
         return res.status(400).json({
             "message":"email already exists"
         })
+//         Easy Memory Trick
+
+// 🧠
+// 400 → Fault in data
+// 409 → data Already exists (clAsh)
     }
     let user=await userModel.create({
         name,email,password
