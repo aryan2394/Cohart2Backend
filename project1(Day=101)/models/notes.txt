@@ -1,0 +1,11 @@
+humara dataabase is connected by shri ji 
+and humein apne model ke liye diffent schema banane hai sochke 
+
+1:USER SCHEMA:(accoding to the instagram schema )
+{
+    username:{unique required},
+    password:{required},
+    email{unique required}
+    bio:{optional},
+    profilepic:{deafult {jaise ki jab hum accound crate karte hai and humein ek image nahi bhejte toh ek image deaafult craeet ho jaati hai}}
+}

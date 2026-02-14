@@ -1,0 +1,17 @@
+// HUM BANA RAHE HAI INSTAGRAM CLONE JISMEIN USER CAN SEE AND CREATE POST SAVE POST AND SOME OTHER FEATURES
+
+// Authetication feature
+    // a)register
+    // b)login
+    // c)logout:(token blacklisting)
+    // d:OTP Based authentication
+
+// Post feature
+    // a)create post
+    // b)user can see feed
+    // c)save post
+    // d)like posts(collections mongo type)
+
+// users feature
+    // a)followers
+    // b)following

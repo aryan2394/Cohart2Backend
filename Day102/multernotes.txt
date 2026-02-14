@@ -1,0 +1,9 @@
+WHAT IS MULTER?
+ye ek middleware ye jo ki jab client data send karta hai in the format of file toh wo usko read karne mein madad karta hai 
+kyonki server jaise ki json data ko read nahi kar sakta hai jiske liye we used the express.json taaki wo req.body se json data ko read kar sakein 
+ussi tarah wo file ko bhi raead nahi kar skata hai 
+
+dekho humein apne file ko save karna hai apne cloud mein 
+lekin data jab tak hum uplaod nahi kar dete hai cloud mein tab tak temporaray humein uss file ko store karna padega 
+toh multer humein ek memoryStorage provide karata hai jismein hum temporaray data rakhte hai 
+and phir usko uplaod kar dete hai cloud mein

@@ -1,0 +1,33 @@
+// HUM BANA RAHE HAI INSTAGRAM CLONE JISMEIN USER CAN SEE AND CREATE POST SAVE POST AND SOME OTHER FEATURES
+
+// Authetication feature
+    // a)register
+    // b)login
+    // c)logout:(token blacklisting)
+    // d:OTP Based authentication
+
+// Post feature
+    // a)create post
+    // b)user can see feed
+    // c)save post
+    // d)like posts(collections mongo type)
+
+// users feature
+    // a)followers
+    // b)following
+
+1:Authetication:
+
+    a)SchemaUser:{jismein username,password,email,bio,profilepic}
+
+    a:register:email and username is unique taaki same username ya email se dusra account n ban jaaye agar unqiue then ceate the user with token
+        and hash the password with bcryptjs 
+    b:login:we can login with email,password or username password (anyone) agar user exists hi nhi karta toh pahel usko register karao
+        then check the password with bcryptjs compare and if all correct the login success 
+
+2:Post:
+    a)PostSchema:{caption,urlimage,user(kisne post kiya hai),craetedAt:{date and time}}
+    {
+        caption:String,urlimage:String and user:kisne post kiya hai wo toh users collection mein hai and we can acces it from collections{user}
+    }
+    
